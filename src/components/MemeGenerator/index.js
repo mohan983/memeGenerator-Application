@@ -67,7 +67,8 @@ class MemeGenerator extends Component {
     this.setState({fontSize: e.target.value})
   }
 
-  onClickGenerate = () => {
+  onClickGenerate = e => {
+    e.preventDefault()
     this.setState({isMemeGenerated: true})
   }
 

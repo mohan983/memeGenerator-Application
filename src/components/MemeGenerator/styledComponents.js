@@ -20,7 +20,7 @@ export const StyledInputContainer = styled.form`
 export const StyledHeading = styled.h1`
   color: #35469c;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: bold;
 `
 
 export const StyledLabel = styled.label`
@@ -61,9 +61,9 @@ export const StyledMemeContainer = styled.div`
   background-image: url('${props => props.imgUrl}');
   background-size: cover;
   height: 40vh;
-  width: 40vw;
+  width: 35vw;
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,5 +72,6 @@ export const StyledMemeContainer = styled.div`
 
 export const StyledMemeParagraph = styled.p`
   color: #ffffff;
-  font-size: ${props => props.fontSize};
+  font-size: ${props => props.fontSize}px;
+  margin: 10px;
 `
